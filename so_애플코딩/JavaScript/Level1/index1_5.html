@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div id="alert" class="alert-box">
+        <p id="txt">알림창임</p>
+        <!-- <button onclick="so('none')">닫기</button> -->
+        <button id="close">닫기</button>
+    </div>
+    <button onclick="txtId()">버튼1</button>
+    <button onclick="txtPw()">버튼2</button>
+    <script>
+        document.getElementById('close').addEventListener('click', function(){
+            document.getElementById('alert').style.display = 'none';
+        });
+        function so(구멍){
+            document.getElementById('alert').style.display = 구멍;
+        }
+        function txtId(){
+            document.getElementById('alert').style.display = 'block';
+            document.getElementById('txt').innerHTML = '아이디';
+        }
+        function txtPw(){
+            document.getElementById('alert').style.display = 'block';
+            document.getElementById('txt').innerHTML = '비번';
+        }
+        // 1.버튼 클릭시 2.아이디
+        // document.getElementById('alert').style.display = block;
+        // document.getElementById('txt').innerHTML = '아이디';
+        // 1.버튼 클릭시 2.비번
+        // document.getElementById('alert').style.display = block;
+        // document.getElementById('txt').innerHTML = '비번';
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript_5</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    
+    <div id="alert" class="alert-box">
+        <p id="title">텍스트변경</p> 
+        <button id="close">닫기</button>
+    </div>
+
+    <button onclick="plus('아이디');">버튼1</button>
+    <button onclick="plus('비번');">버튼2</button>
+
+    <script>
+        function plus(txtChange1){
+            document.getElementById('title').innerHTML = txtChange1;
+            document.getElementById('alert').style.display='block';
+        }
+        document.getElementById('close').addEventListener('click', function(){
+            document.getElementById('alert').style.display='none';
+        });
+    </script>
+    
+</body>
+</html>

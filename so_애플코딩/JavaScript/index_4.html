@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript_4</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    
+    <div id="alert" class="alert-box">alert 박스 <button onclick="alimClose()">닫기</button></div>
+    <button onclick="alimOpen('block')">버튼</button>
+
+    <script>
+        function alimOpen(구멍){
+            document.getElementById('alert').style.display=구멍;
+        }
+
+        function alimClose(){
+            document.getElementById('alert').style.display='none';
+        }
+
+        function plus(더하기, 더하기2){
+            2 + 더하기
+        }
+        plus(ㅇㄹㅇㄹ, ㅇㅇㅇㄹ);
+        plus(2);
+        plus(3);
+    </script>
+    
+</body>
+</html>

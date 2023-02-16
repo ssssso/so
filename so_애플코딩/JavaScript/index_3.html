@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript_3</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    
+    <div id="alert-box" class="alert-box">alert 박스 <button onclick="alimClose()">닫기</button></div>
+    <button onclick="alimOpen()">버튼</button>
+
+    <script>
+        function alimOpen(){
+            document.getElementById('alert-box').style.display='block';
+        }
+        function alimClose(){
+            document.getElementById('alert-box').style.display='none';
+        }
+    </script>
+    
+</body>
+</html>
